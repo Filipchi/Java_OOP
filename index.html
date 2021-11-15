@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="en">
+
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Bootstrap CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+            integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+        <link href="css/style.css" rel="stylesheet">
+
+        <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
+        <title>Práctica poo Java</title>
+    </head>
+
+    <body>
+        <section class="container-fluid fondo d-flex justify-content-center align-items-center">
+            <a href="#introduccion">
+                <h1 class="uno">Java</h1>
+            </a>
+        </section>
+
+        <!-- ---------------------------------------------------------- -->
+        <div class="sticky-top">
+            <nav class="navbar navbar-expand-md navbar-light sticky-top barra">
+                <div class="container-fluid ">
+                    <button class="navbar-toggler " type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon "></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse justify-content-evenly" id="navbarTogglerDemo03">
+                        <div class="navbar-nav text-center nav-pills ">
+                            <a class="nav-item nav-link text-light px-4" aria-current="page" href="#"><b> Inicio
+                                </b></a>
+                            <a class="nav-item nav-link text-light px-4" href="#introduccion"><b> Introducción </b></a>
+                            <a class="nav-item nav-link text-light px-4" href="#info"><b> Información General </b></a>
+                            <a class="nav-item nav-link text-light px-4" href="#desarrollo"><b> Desarrollo </b></a>
+                            <a class="nav-item nav-link text-light px-4" href="#resultados"><b> Resultados </b></a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <!-- ---------------------------------------------------------------- -->
+
+        <section class="container" id="introduccion">
+            <h2 class="mt-5 p-5 text-center">Practica de Programación Orientada <br> a Objetos en Java</h2>
+
+            <p>
+                La programación Orientada a Objetos representa uno de los más importantes paradigma de la programación
+                especialmente en la creación de aplicaciones. Por otra parte, Java es un lenguage de programación que
+                está presente en gran variedad de entornos, siendo uno de los lenguages más populares y medianamente
+                longevo.
+            </p>
+            <p>
+                Por esta razón, con el fin de poner en práctica los fundamentos de la POO en Java, se presentará a
+                continuación el desarrollo de un problema resuelto a partir de este paradigma.
+            </p>
+            <p>
+                En el siguiente archio pdf se presenta las instrucciones del problema planteado: <br><br>
+            </p>
+            <center>
+                <iframe src="./assets/java_r2.pdf" style="width:100%; height:500px;"></iframe>
+            </center>
+
+        </section>
+
+        <section class="container" id="info">
+            <h2 class="mt-5 p-5 text-center">Información General</h2>
+
+            <p>Este proyecto está modelado en un diagrama UML que consta de 4 tablas, se define un objeto tipo
+                Electrodomestico, el cual extiende hacia dos elementos: Televisores y Lavadoras cada uno de los cuales
+                tiene su método independiente de <em>"calcularPrecio()"</em>.</p>
+
+            <p>A continuación, se presenta en la <b>Figura 1</b> el diagrama UML del proyecto:</p>
+
+            <div class="card px-auto" style="width: 100%;">
+                <img src="./assets/uml.svg" class="card-img-top" alt="Diagrama UML">
+                <div class="card-body">
+                    <h6 class="card-text text-center"><b>Figura 1.</b> Diagrama UML del proyecto</h6>
+                </div>
+            </div>
+        </section>
+
+        <section class="container" id="desarrollo">
+            <h2 class="mt-5 p-5 text-center">Desarrollo del Problema</h2>
+
+            <p>Con base en la documentación proporcionada y el análisis del diagrama UML, el desarrollo de este ejercicio se empieza creando el objeto de tipo <em><strong>Electrodomestico</strong></em>, sus constantes y atributos, contructores y métodos de acuerdo a las condiciones establecidas.</p>
+
+            <p>Seguidamente se procede a realizar este mismo procedimiento con los objetos "hijos", en los cuales tenemos a los objetos <em><strong>Televisor</strong></em> y <em><strong>Lavadora</strong></em> los cuales heredan los atriutos de los contructores del padre.</p>
+
+            <p>Finalmente se desarrolla la clase <em><strong>PrecioTotal</strong> con el fin de sumar el valor neto de cada objeto ingresado por el usuario y mostrar el resultado en pantalla.</em></p>
+
+        </section>
+
+        <section class="container" id="resultados">
+
+            <h2 class="mt-5 p-5 text-center"> Resultados </h2>
+            <p>En la <b>Figura 2</b> se presentan las 2 sentenccias de prueba propuesta por el ejercicio. En estas se puede observar que son dos listas de objetos del tipo <em><strong>Electrodomestico[]</strong></em> que se componen de todas las opciones posibles:</p>
+
+            <div class="card px-auto" style="width: 100%;">
+                <img src="./assets/esperado.png" class="card-img-top" alt="Sentencias de prueba">
+                <div class="card-body">
+                    <h6 class="card-text text-center"><b>Figura 2.</b> Sentencias de prueba</h6>
+                </div>
+            </div>
+            <br><br>
+            <p>Ahora, en la <b>Figura 3</b> se muestra el resultado obtenido por medio del código programado:</p>
+
+            <div class="card px-auto mx-auto" style="width: 70%;">
+                <img src="./assets/resultado.png" class="card-img-top" alt="Sentencias de prueba">
+                <div class="card-body">
+                    <h6 class="card-text text-center"><b>Figura 2.</b> Sentencias de prueba</h6>
+                </div>
+            </div>
+            <br><br>
+            <p>Se puede evidenciar que cada resultado coincide, por lo tanto se da por resuelto el problema presentado.</p>
+        </section>
+
+        <footer class="container-fluid bg-dark">
+            <h5 class="text-align-center">2021 - Jhon Fredy Ospina Galeano</h5>
+        </footer>
+
+        <!-- js -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+            crossorigin="anonymous"></script>
+    </body>
+
+</html>
